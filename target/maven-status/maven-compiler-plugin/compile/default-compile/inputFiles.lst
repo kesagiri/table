@@ -1,0 +1,6 @@
+/home/tony/Рабочий стол/table/src/main/java/com/mystore/clients/ClientsController.java
+/home/tony/Рабочий стол/table/src/main/java/com/mystore/clients/persistence/ClientMapper.java
+/home/tony/Рабочий стол/table/src/main/java/com/mystore/clients/domain/Client.java
+/home/tony/Рабочий стол/table/src/main/java/com/mystore/clients/service/mybatis/ClientServiceImpl.java
+/home/tony/Рабочий стол/table/src/main/java/com/mystore/clients/service/ClientService.java
+/home/tony/Рабочий стол/table/src/main/java/com/mystore/clients/domain/Address.java

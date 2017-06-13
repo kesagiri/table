@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.mystore.clients.persistence.ClientMapper">
+
+
+    <resultMap id="clientResultMap" type="Client">
+        <id property="id" column="ID" />
+        <result property="firstName" column="FIRST_NAME" />
+        <result property="lastName" column="LAST_NAME" />
+        <collection property="addresses" ofType="Address">
+            <id property="id" column="ADDRESS_ID"/>
+            <result property="city" column="CITY"/>
+            <result property="street" column="STREET"/>
+            <result property="house" column="HOUSE"/>
+        </collection>
+    </resultMap>
+
+    <select id="findAll" resultMap="clientResultMap">
+        SELECT
+        C.ID,
+        C.FIRST_NAME,
+        C.LAST_NAME,
+        A.ID as ADDRESS_ID,
+        A.CITY as CITY,
+        A.STREET as STREET,
+        A.HOUSE as HOUSE
+        FROM CLIENT C
+        JOIN ADDRESS A ON C.ID = A.CLIENT_ID
+    </select>
+</mapper>

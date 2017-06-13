@@ -1,0 +1,6 @@
+com/mystore/clients/persistence/ClientMapper.class
+com/mystore/clients/ClientsController.class
+com/mystore/clients/domain/Client.class
+com/mystore/clients/domain/Address.class
+com/mystore/clients/service/mybatis/ClientServiceImpl.class
+com/mystore/clients/service/ClientService.class
